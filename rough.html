@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Divs Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .div1 { /* Header */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .div2 { /* Main content */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 3rem 2rem;
+            gap: 2rem;
+        }
+
+        .div3 { /* Footer */
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+
+        @media (max-width: 768px) {
+            .div1 { font-size: 1.5rem; padding: 1.5rem; }
+            .div2 { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Div 1: Header -->
+    <div class="div1">
+        Welcome to 3 Divs Design
+    </div>
+
+    <!-- Div 2: Main Content -->
+    <div class="div2">
+        <div class="card">
+            <h2>Simple & Elegant</h2>
+            <p>This page uses exactly 3 divs to create a modern, responsive layout. No frameworks needed!</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Div 3: Footer -->
+    <div class="div3">
+        <p>&copy; 2024 Made with ❤️ using only 3 divs</p>
+        <p>Responsive • Modern • Clean</p>
+    </div>
+</body>
+</html>

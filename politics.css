@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    
+}
+
+.content-1{
+    border: 1px solid red;
+    text-align: center;
+}
+
+.content-2{
+    border: 1px solid red;
+    text-align: center;
+}
+
+.content-3{
+    border: 1px solid red;
+    text-align: center;
+}
+
